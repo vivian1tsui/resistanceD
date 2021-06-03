@@ -1,0 +1,11 @@
+include("Graph.jl")
+include("Alg.jl")
+
+fileName = string("Data/", ARGS[1], ".txt")
+G0 = readGraph(fileName, "unweighted")
+G = getLLC(G0)
+lg = open("log.txt", "a")
+println(lg, ARGS[1], " ", G0.n, " ", G0.m, " ", G.n, " ", G.m)
+println(lg, "Resistance Diameter : ", findD(G))
+println(lg, "Diameter : ", findd(G))
+println(lg)
