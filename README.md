@@ -7,7 +7,7 @@ We select a large set of real-world networks from [Koblenz Network Collection](h
 
 
 ## Experiments
-Start experiment with  
+Start experiment for Karate example with  
 ```
 sh Exp.sh
 ```
